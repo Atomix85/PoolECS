@@ -11,7 +11,6 @@
           <e p="Accessor.cs" t="Include" />
           <e p="Composant.cs" t="Include" />
           <e p="ECSmanager.cs" t="Include" />
-          <e p="Entity.cs" t="Include" />
           <e p="FollowTarget.cs" t="Include" />
           <e p="System.cs" t="Include" />
           <e p="TargetEdible.cs" t="Include" />
