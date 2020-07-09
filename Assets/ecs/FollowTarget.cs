@@ -22,6 +22,7 @@ public class FollowTarget : Composant
 
     public override void Run()
     {
+        _navMeshAgent.isStopped = false;
         _navMeshAgent.SetDestination(target.position);
         /*if (_navMeshAgent.isStopped)
         {

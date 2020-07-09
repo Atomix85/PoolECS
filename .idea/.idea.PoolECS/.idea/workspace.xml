@@ -14,6 +14,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/ecs/ECSmanager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EatEdibleScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/03035303-2B91-4045-A0B9-6BEA329B98D3/37/b9f30824/NavMesh.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ecs/TargetEdible.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MoveTo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PoolableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ecs/System.cs" root0="FORCE_HIGHLIGHTING" />
@@ -29,10 +30,11 @@
         <option value="$PROJECT_DIR$/Assets/Pool.cs" />
         <option value="$PROJECT_DIR$/Assets/EatEdibleScript.cs" />
         <option value="$PROJECT_DIR$/Assets/ecs/Composant.cs" />
-        <option value="$PROJECT_DIR$/Assets/ecs/FollowTarget.cs" />
-        <option value="$PROJECT_DIR$/Assets/ecs/System.cs" />
         <option value="$PROJECT_DIR$/Assets/ecs/Accessor.cs" />
         <option value="$PROJECT_DIR$/Assets/ecs/ECSmanager.cs" />
+        <option value="$PROJECT_DIR$/Assets/ecs/System.cs" />
+        <option value="$PROJECT_DIR$/Assets/ecs/FollowTarget.cs" />
+        <option value="$PROJECT_DIR$/Assets/ecs/TargetEdible.cs" />
       </list>
     </option>
   </component>
@@ -86,7 +88,7 @@
       <updated>1594023449596</updated>
       <workItem from="1594023455535" duration="1611000" />
       <workItem from="1594296045834" duration="20000" />
-      <workItem from="1594296140443" duration="4932000" />
+      <workItem from="1594296140443" duration="8798000" />
     </task>
     <servers />
   </component>
