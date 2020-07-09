@@ -11,8 +11,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/EatEdibleScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PoolableObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ecs/System.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ecs/Accessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ecs/Composant.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Pool.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -21,6 +24,9 @@
         <option value="$PROJECT_DIR$/Assets/PoolableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Pool.cs" />
         <option value="$PROJECT_DIR$/Assets/ecs/Accessor.cs" />
+        <option value="$PROJECT_DIR$/Assets/ecs/Composant.cs" />
+        <option value="$PROJECT_DIR$/Assets/ecs/System.cs" />
+        <option value="$PROJECT_DIR$/Assets/EatEdibleScript.cs" />
       </list>
     </option>
   </component>
@@ -73,6 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1594023449596</updated>
       <workItem from="1594023455535" duration="1611000" />
+      <workItem from="1594296045834" duration="20000" />
     </task>
     <servers />
   </component>
@@ -86,7 +93,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
