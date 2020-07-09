@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 1707672904056424377}
   - component: {fileID: 5047457573054132766}
   - component: {fileID: 6590880482832135609}
-  - component: {fileID: 4807051533675500721}
   - component: {fileID: 6076044430302176949}
+  - component: {fileID: -1449451362702236942}
   m_Layer: 8
   m_Name: Pinky
   m_TagString: Untagged
@@ -119,19 +119,6 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &4807051533675500721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7890795826059064973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 887371a7adaf6f544a10bd35be89d146, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 6336328068255318784, guid: ef3219306af001640a648fa7b26ba65a, type: 3}
 --- !u!114 &6076044430302176949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,3 +131,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424666cc49e1b40478ccc77cc4683d66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-1449451362702236942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7890795826059064973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6c5bb30cbd79744b64db2f2ee3d6f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 3264788672975778107, guid: ef3219306af001640a648fa7b26ba65a, type: 3}

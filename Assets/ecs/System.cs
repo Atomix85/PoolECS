@@ -6,11 +6,10 @@ public class SystemUpdate : IUpdater
 {
     public void Run()
     {
-        Accessor<Composant> modules = new Accessor<Composant>();
+        Accessor<Composant> modules = Accessor<Composant>.Instance();
         foreach (var module in modules.GetAllModules())
         {
-            //GameObject go = module;
-            
+            module.Run();
         }
     }
 }

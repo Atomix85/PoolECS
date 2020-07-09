@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Composant 
+public abstract class Composant : MonoBehaviour
 {
-    
+    public abstract void Run();
 }
