@@ -2,16 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KillPlayerScript : Composant
+public class KillPlayerScript : MonoBehaviour
 {
-    public GameObject player;
+    private void OnTriggerEnter(Collider other)
+	{
+		HandleCollision(other.gameObject);
+	}
 
-
-    public override void Run()
+	/*private void OnCollisionEnter(Collision other)
+	{
+		HandleCollision(other.gameObject);
+	}*/
+	
+    private void HandleCollision(GameObject other)
     {
-        if (this.transform.position == player.transform.position)
+        if (other.gameObject.layer==LayerMask.NameToLayer("Player"))
         {
-            Destroy(player);
+            Destroy(other);
         }
     }
 }
