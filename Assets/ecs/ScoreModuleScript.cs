@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScoreModuleScript : Composant
+public class ScoreModuleScript : MonoBehaviour
 {
     public int _score;
     
@@ -16,7 +16,7 @@ public class ScoreModuleScript : Composant
 
 
 
-    public override void Run()
+    public void Run()
     {
         throw new System.NotImplementedException();
     }

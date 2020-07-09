@@ -13,18 +13,19 @@ public class SystemUpdate : IUpdater
             module.Run();
         }
         
+        Accessor<EdibleModule> editableModules = Accessor<EdibleModule>.Instance();
         Accessor<TargetEdible> modulesBis = Accessor<TargetEdible>.Instance();
         TargetEdible _nearest=null;
         foreach (var moduleBis in modulesBis.GetAllModules())
         {
-           // if(_nearest == null) _
-            moduleBis.Run();
+            moduleBis.Run(editableModules);
         }
 
         Accessor<KillPlayerScript> modulesEne = Accessor<KillPlayerScript>.Instance();
-        foreach (var moduleEne in modulesBis.GetAllModules())
+        foreach (var moduleEne in modulesEne.GetAllModules())
         {
-            moduleEne.Run();
+           // if(moduleEne != null)
+                //moduleEne.Run();
         }
     }
 }

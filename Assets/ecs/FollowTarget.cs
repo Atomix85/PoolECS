@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class FollowTarget : Composant
+public class FollowTarget : MonoBehaviour
 {
     [SerializeField]
     public Transform target;
@@ -20,17 +20,18 @@ public class FollowTarget : Composant
         Accessor<FollowTarget>.Instance().AddModule(this);
     }
 
-    void Update()
+    public void Run()
     {
-        
         Debug.DrawLine(_navMeshAgent.destination, new Vector3(_navMeshAgent.destination.x, _navMeshAgent.destination.y + 1f, _navMeshAgent.destination.z), Color.green);
-        
-    }
-
-    public override void Run()
-    {
-        _navMeshAgent.isStopped = false;
-        _navMeshAgent.SetDestination(target.position);
+        if (target != null)
+        {
+            _navMeshAgent.isStopped = false;
+            _navMeshAgent.SetDestination(target.position);
+        }
+        else
+        {
+            _navMeshAgent.isStopped = true;
+        }
         
         /*if (_navMeshAgent.isStopped)
         {

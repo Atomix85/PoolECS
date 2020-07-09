@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class TargetEdible : Composant
+public class TargetEdible : MonoBehaviour
 {
 
     public GameObject player;
@@ -19,22 +19,24 @@ public class TargetEdible : Composant
 
     }
 
-    public override void Run()
+    public void Run(Accessor<EdibleModule> modules)
     {
         _Navmesh.isStopped = false;
 
-        GameObject neareast = null;
+        EdibleModule neareast = null;
         
-        foreach (var bille in billes)
+        
+        foreach (var module in modules.GetAllModules())
         {
-            if (bille == null) continue;
-            if (neareast == null || Vector3.Distance(transform.position, bille.transform.position) <
+            if(!module.edible) continue;
+            if (module == null) continue;
+            if (neareast == null || Vector3.Distance(transform.position, module.transform.position) <
                 Vector3.Distance(transform.position, neareast.transform.position))
             {
-                neareast = bille;
+                neareast = module;
             }
         }
-        
-        _Navmesh.SetDestination(neareast.transform.position);
+        if(neareast != null) 
+            _Navmesh.SetDestination(neareast.transform.position);
     }
 }
