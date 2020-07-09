@@ -5,11 +5,13 @@ using UnityEngine;
 public class ScoreModuleScript : Composant
 {
     public int _score;
+    
+    [SerializeField]
+    private GameObject player;
+    
     void Start()
     {
         _score = 0;
-        
-
     }
 
 

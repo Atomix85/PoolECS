@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -2821680613171118117}
   - component: {fileID: 2126916874418589263}
   - component: {fileID: 8597103855145190643}
+  - component: {fileID: 2181088337321916083}
   m_Layer: 9
   m_Name: PacMan
   m_TagString: Untagged
@@ -150,3 +151,16 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &2181088337321916083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6336328068255318784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4475f6c1bafa564d99cde986eb2af79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _score: 0
