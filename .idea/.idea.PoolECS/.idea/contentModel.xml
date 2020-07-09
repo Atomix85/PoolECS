@@ -11,7 +11,9 @@
           <e p="Accessor.cs" t="Include" />
           <e p="Composant.cs" t="Include" />
           <e p="ECSmanager.cs" t="Include" />
+          <e p="EdibleModule.cs" t="Include" />
           <e p="FollowTarget.cs" t="Include" />
+          <e p="ScoreModuleScript.cs" t="Include" />
           <e p="System.cs" t="Include" />
           <e p="TargetEdible.cs" t="Include" />
         </e>

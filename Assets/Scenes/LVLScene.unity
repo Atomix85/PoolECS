@@ -120,7 +120,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 3696cbbad5add434c9ceab4799ed3789, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 81c130160c6b05345bf56548cf86bdf2, type: 2}
 --- !u!1001 &28032933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -664,6 +664,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0396c21f032a09e4394dad648e93b4e8, type: 3}
+--- !u!4 &151990750 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3264788672975778107, guid: ef3219306af001640a648fa7b26ba65a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8770406318358239760}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &178928467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8202,6 +8208,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1449451362702236942, guid: f47c3dd452322d9409c107cec5490ce7,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 151990750}
     - target: {fileID: 3397338870744989348, guid: f47c3dd452322d9409c107cec5490ce7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8466,20 +8477,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3264788672975778107, guid: ef3219306af001640a648fa7b26ba65a,
+    - target: {fileID: 2126916874418589263, guid: ef3219306af001640a648fa7b26ba65a,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3264788672975778107, guid: ef3219306af001640a648fa7b26ba65a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3264788672975778107, guid: ef3219306af001640a648fa7b26ba65a,
         type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 3264788672975778107, guid: ef3219306af001640a648fa7b26ba65a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.914
+      objectReference: {fileID: 0}
+    - target: {fileID: 3264788672975778107, guid: ef3219306af001640a648fa7b26ba65a,
+        type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.5
+      value: 5.01
       objectReference: {fileID: 0}
     - target: {fileID: 3264788672975778107, guid: ef3219306af001640a648fa7b26ba65a,
         type: 3}
@@ -8525,6 +8541,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PacMan
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184699961065707544, guid: ef3219306af001640a648fa7b26ba65a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef3219306af001640a648fa7b26ba65a, type: 3}
