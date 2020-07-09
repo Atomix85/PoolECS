@@ -2,27 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EatEdibleScript : MonoBehaviour
+public class EatEdibleScript : Composant
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
+    
+    
+    
     private void OnTriggerEnter(Collider other)
     {
         HandleCollision(other.gameObject);
     }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        HandleCollision(other.gameObject);
-    }
+    
     private void HandleCollision(GameObject other)
     {
         Debug.Log("Col!");
@@ -30,5 +19,10 @@ public class EatEdibleScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public override void Run()
+    {
+        throw new System.NotImplementedException();
     }
 }
