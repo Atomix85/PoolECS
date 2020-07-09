@@ -14,6 +14,7 @@ public class EatEdibleScript : MonoBehaviour
     {
         if (other.gameObject.layer==LayerMask.NameToLayer("Player"))
         {
+            ScoreModuleScript.ScoreUp();
             
             Destroy(gameObject);
         }

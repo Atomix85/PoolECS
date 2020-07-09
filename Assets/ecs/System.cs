@@ -20,13 +20,7 @@ public class SystemUpdate : IUpdater
         {
             moduleBis.Run(editableModules);
         }
-
-        Accessor<KillPlayerScript> modulesEne = Accessor<KillPlayerScript>.Instance();
-        foreach (var moduleEne in modulesEne.GetAllModules())
-        {
-           // if(moduleEne != null)
-                //moduleEne.Run();
-        }
+        
     }
 }
 

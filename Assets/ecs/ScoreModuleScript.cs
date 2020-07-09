@@ -4,20 +4,18 @@ using UnityEngine;
 
 public class ScoreModuleScript : MonoBehaviour
 {
-    public int _score;
-    
-    [SerializeField]
-    private GameObject player;
-    
+    public static int _score;
+
     void Start()
     {
+
         _score = 0;
+
     }
-
-
-
-    public void Run()
+    
+    public static void ScoreUp()
     {
-        throw new System.NotImplementedException();
+        _score+=100;
+        Debug.Log(_score);
     }
 }
