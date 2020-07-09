@@ -20,6 +20,12 @@ public class SystemUpdate : IUpdater
            // if(_nearest == null) _
             moduleBis.Run();
         }
+
+        Accessor<KillPlayerScript> modulesEne = Accessor<KillPlayerScript>.Instance();
+        foreach (var moduleEne in modulesBis.GetAllModules())
+        {
+            moduleEne.Run();
+        }
     }
 }
 

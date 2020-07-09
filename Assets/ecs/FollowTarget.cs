@@ -10,7 +10,7 @@ public class FollowTarget : Composant
 
     private NavMeshAgent _navMeshAgent;
     
-    // Start is called before the first frame update
+    
     void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
@@ -20,10 +20,18 @@ public class FollowTarget : Composant
         Accessor<FollowTarget>.Instance().AddModule(this);
     }
 
+    void Update()
+    {
+        
+        Debug.DrawLine(_navMeshAgent.destination, new Vector3(_navMeshAgent.destination.x, _navMeshAgent.destination.y + 1f, _navMeshAgent.destination.z), Color.green);
+        
+    }
+
     public override void Run()
     {
         _navMeshAgent.isStopped = false;
         _navMeshAgent.SetDestination(target.position);
+        
         /*if (_navMeshAgent.isStopped)
         {
             
