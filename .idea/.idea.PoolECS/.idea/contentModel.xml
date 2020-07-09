@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\brete\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\brete\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_PoolECS.-1789292428.00" t="ExcludeRecursive" />
-    <e p="C:\Users\brete\OneDrive\Documents\projects\unity\PoolECS" t="IncludeRecursive">
+    <e p="C:\Users\brete\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_PoolECS.1331267345.00" t="ExcludeRecursive" />
+    <e p="C:\Users\brete\OneDrive\Documents\projects\unity\PoolECS\PoolECS" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="EatEdibleScript.cs" t="Include" />
+        <e p="ecs" t="Include">
+          <e p="Accessor.cs" t="Include" />
+          <e p="Composant.cs" t="Include" />
+          <e p="Entity.cs" t="Include" />
+          <e p="System.cs" t="Include" />
+        </e>
+        <e p="KillPlayerScript.cs" t="Include" />
+        <e p="MoveTo.cs" t="Include" />
+        <e p="ObjectForPool.cs" t="Include" />
+        <e p="PacManScript.cs" t="Include" />
         <e p="Pool.cs" t="Include" />
         <e p="PoolableObject.cs" t="Include" />
       </e>
