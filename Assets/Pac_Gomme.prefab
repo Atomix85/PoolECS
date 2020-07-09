@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8880863701409183838}
   - component: {fileID: 3908556109840139683}
   - component: {fileID: 5610010537028974193}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pac_Gomme
   m_TagString: Untagged
   m_Icon: {fileID: 0}
