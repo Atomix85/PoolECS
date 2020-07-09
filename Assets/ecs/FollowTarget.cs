@@ -14,8 +14,10 @@ public class FollowTarget : Composant
     void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
+
+        Debug.Log(this);
         
-        Accessor<Composant>.Instance().AddModule(this);
+        Accessor<FollowTarget>.Instance().AddModule(this);
     }
 
     public override void Run()

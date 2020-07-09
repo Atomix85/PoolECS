@@ -11,6 +11,11 @@ public class Accessor<T>
         return _instance;
     }
 
+    public Accessor()
+    {
+        modules = new List<T>();
+    }
+
     private static Accessor<T> _instance;
 
     private List<T> modules;

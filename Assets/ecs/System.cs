@@ -6,7 +6,7 @@ public class SystemUpdate : IUpdater
 {
     public void Run()
     {
-        Accessor<Composant> modules = Accessor<Composant>.Instance();
+        Accessor<FollowTarget> modules = Accessor<FollowTarget>.Instance();
         foreach (var module in modules.GetAllModules())
         {
             module.Run();
