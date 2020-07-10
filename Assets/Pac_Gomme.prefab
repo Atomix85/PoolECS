@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 5610010537028974193}
   - component: {fileID: -8473186516455959162}
   - component: {fileID: 5590547865414212080}
-  - component: {fileID: 5792275333713706295}
   m_Layer: 10
   m_Name: Pac_Gomme
   m_TagString: bille
@@ -125,15 +124,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   edible: 1
---- !u!114 &5792275333713706295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6372146979663883233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ff8fac17947dc9488d2d57f35837dbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

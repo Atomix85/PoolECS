@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EatEdibleScript : MonoBehaviour
 {
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -12,11 +13,12 @@ public class EatEdibleScript : MonoBehaviour
     
     private void HandleCollision(GameObject other)
     {
-        if (other.gameObject.layer==LayerMask.NameToLayer("Player"))
+        EdibleModule ediblescript = other.gameObject.GetComponent<EdibleModule>();
+        if (ediblescript.edible == true)
         {
             ScoreModuleScript.ScoreUp();
             
-            Destroy(gameObject);
+            Destroy(other);
         }
     }
 
