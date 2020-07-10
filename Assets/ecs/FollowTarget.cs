@@ -10,7 +10,7 @@ public class FollowTarget : MonoBehaviour
 
     public bool isFollow;
     
-    private NavMeshAgent _navMeshAgent;
+    public NavMeshAgent _navMeshAgent;
     
     
     void Start()
@@ -22,31 +22,5 @@ public class FollowTarget : MonoBehaviour
         Accessor<FollowTarget>.Instance().AddModule(this);
     }
 
-    public void Run()
-    {
-        Debug.DrawLine(_navMeshAgent.destination, new Vector3(_navMeshAgent.destination.x, _navMeshAgent.destination.y + 1f, _navMeshAgent.destination.z), Color.green);
-        
-            if (target != null)
-            {
-                if (isFollow)
-                {
-                    _navMeshAgent.isStopped = false;
-                    _navMeshAgent.SetDestination(target.position);
-                }
-                else
-                {
-                    _navMeshAgent.isStopped = true;
-                }
-            }
-            else
-            {
-                _navMeshAgent.isStopped = true;
-            }
-
-        /*if (_navMeshAgent.isStopped)
-        {
-            
-        }*/
-    }
     
 }

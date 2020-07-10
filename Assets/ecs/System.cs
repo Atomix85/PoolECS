@@ -10,7 +10,22 @@ public class SystemUpdate : IUpdater
         
         foreach (var module in modules.GetAllModules())
         {
-            module.Run();
+            if (module.target != null)
+            {
+                if (module.isFollow)
+                {
+                    module._navMeshAgent.isStopped = false;
+                    module._navMeshAgent.SetDestination(module.target.position);
+                }
+                else
+                {
+                    module._navMeshAgent.isStopped = true;
+                }
+            }
+            else
+            {
+                module._navMeshAgent.isStopped = true;
+            }
         }
         
         Accessor<EdibleModule> editableModules = Accessor<EdibleModule>.Instance();
@@ -18,7 +33,30 @@ public class SystemUpdate : IUpdater
         TargetEdible _nearest=null;
         foreach (var moduleBis in modulesBis.GetAllModules())
         {
-            moduleBis.Run(editableModules);
+            moduleBis._Navmesh.isStopped = false;
+
+            EdibleModule neareast = null;
+
+            if (moduleBis.isFollow)
+            {
+                foreach (var editableModule in editableModules.GetAllModules())
+                {
+                    if (!editableModule.edible) continue;
+                    if (editableModule == null) continue;
+                    if (neareast == null || Vector3.Distance(moduleBis.transform.position, editableModule.transform.position) <
+                        Vector3.Distance(moduleBis.transform.position, neareast.transform.position))
+                    {
+                        neareast = editableModule;
+                    }
+                }
+
+                if (neareast != null)
+                    moduleBis._Navmesh.SetDestination(neareast.transform.position);
+            }
+            else
+            {
+                moduleBis._Navmesh.SetDestination(moduleBis.ennemy.transform.position);
+            }
         }
         
     }
