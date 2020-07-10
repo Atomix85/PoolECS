@@ -8936,6 +8936,11 @@ PrefabInstance:
       propertyPath: ennemy
       value: 
       objectReference: {fileID: 45134891}
+    - target: {fileID: 1291909269439435467, guid: ef3219306af001640a648fa7b26ba65a,
+        type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 1356738987092681817}
     - target: {fileID: 2126916874418589263, guid: ef3219306af001640a648fa7b26ba65a,
         type: 3}
       propertyPath: m_Enabled
