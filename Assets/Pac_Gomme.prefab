@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 8880863701409183838}
   - component: {fileID: 3908556109840139683}
   - component: {fileID: 5610010537028974193}
-  - component: {fileID: -160104189298037628}
   - component: {fileID: -8473186516455959162}
+  - component: {fileID: 5590547865414212080}
+  - component: {fileID: 5792275333713706295}
   m_Layer: 10
   m_Name: Pac_Gomme
   m_TagString: bille
@@ -95,18 +96,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5590547865414212080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6372146979663883233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 854de253ecf6db0489efaf83f515dabf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &-8473186516455959162
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -119,7 +108,32 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5590547865414212080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6372146979663883233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 854de253ecf6db0489efaf83f515dabf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  edible: 1
+--- !u!114 &5792275333713706295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6372146979663883233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff8fac17947dc9488d2d57f35837dbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
