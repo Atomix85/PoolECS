@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class EatEdibleScript : MonoBehaviour
 {
+    
 
     public Text text;
     
@@ -15,7 +16,8 @@ public class EatEdibleScript : MonoBehaviour
     
     private void HandleCollision(GameObject other)
     {
-        if (other.gameObject.layer==LayerMask.NameToLayer("Player"))
+        EdibleModule ediblescript = other.gameObject.GetComponent<EdibleModule>();
+        if (ediblescript.edible == true)
         {
             text.text = ScoreModuleScript.ScoreUp().ToString();
             Destroy(gameObject);
