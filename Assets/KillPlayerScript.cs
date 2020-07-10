@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class KillPlayerScript : MonoBehaviour
 {
+	public bool isTarget = true;
+
+	public TargetEdible targetEdible;
+	
     private void OnTriggerEnter(Collider other)
 	{
 		HandleCollision(other.gameObject);
@@ -18,7 +22,13 @@ public class KillPlayerScript : MonoBehaviour
     {
         if (other.gameObject.layer==LayerMask.NameToLayer("Player"))
         {
-            Destroy(other);
+	        if(isTarget)
+				Destroy(other);
+	        else
+	        {
+		        targetEdible.isFollow = true;
+		        Destroy(gameObject);
+	        }
         }
     }
 }

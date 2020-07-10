@@ -5,7 +5,8 @@ using UnityEngine;
 public class ScoreModuleScript : MonoBehaviour
 {
     public static int _score;
-
+    
+    
     void Start()
     {
 
@@ -13,9 +14,10 @@ public class ScoreModuleScript : MonoBehaviour
 
     }
     
-    public static void ScoreUp()
+    public static int ScoreUp()
     {
         _score+=100;
         Debug.Log(_score);
+        return _score;
     }
 }

@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 5610010537028974193}
   - component: {fileID: -8473186516455959162}
   - component: {fileID: 5590547865414212080}
-  - component: {fileID: -5443453826645715487}
+  - component: {fileID: 2707370819954431663}
   m_Layer: 10
-  m_Name: Pac_Gomme
+  m_Name: INVINCIBLE
   m_TagString: bille
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 29bc55766d023134ca1a847ec5e2621b, type: 2}
+  - {fileID: 2100000, guid: 364f6fbf77455834da852740228a898d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   edible: 0
---- !u!114 &-5443453826645715487
+--- !u!114 &2707370819954431663
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,7 +134,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6372146979663883233}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ff8fac17947dc9488d2d57f35837dbc, type: 3}
+  m_Script: {fileID: 11500000, guid: 826956d47af9db94480a61b13197b2f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 1444926712133865929, guid: bfde3cab6b25bdf4a8372f445642c03b, type: 3}
+  followTarget: {fileID: -1449451362702236942, guid: f47c3dd452322d9409c107cec5490ce7,
+    type: 3}
+  targetEdible: {fileID: -2972189689126065870, guid: ef3219306af001640a648fa7b26ba65a,
+    type: 3}
