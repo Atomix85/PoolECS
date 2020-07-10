@@ -36,13 +36,13 @@
         <option value="$PROJECT_DIR$/Assets/ecs/Accessor.cs" />
         <option value="$PROJECT_DIR$/Assets/ecs/ECSmanager.cs" />
         <option value="$PROJECT_DIR$/Assets/ecs/EdibleModule.cs" />
-        <option value="$PROJECT_DIR$/Assets/ecs/FollowTarget.cs" />
         <option value="$PROJECT_DIR$/Assets/eatInvincibleScript.cs" />
         <option value="$PROJECT_DIR$/Assets/KillPlayerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/ecs/ScoreModuleScript.cs" />
         <option value="$PROJECT_DIR$/Assets/EatEdibleScript.cs" />
         <option value="$PROJECT_DIR$/Assets/ecs/TargetEdible.cs" />
         <option value="$PROJECT_DIR$/Assets/ecs/System.cs" />
+        <option value="$PROJECT_DIR$/Assets/ecs/FollowTarget.cs" />
       </list>
     </option>
   </component>
@@ -97,7 +97,7 @@
       <workItem from="1594023455535" duration="1611000" />
       <workItem from="1594296045834" duration="20000" />
       <workItem from="1594296140443" duration="9473000" />
-      <workItem from="1594372440085" duration="6900000" />
+      <workItem from="1594372440085" duration="7314000" />
     </task>
     <servers />
   </component>

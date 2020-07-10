@@ -20,7 +20,7 @@ public class EatEdibleScript : MonoBehaviour
         if (ediblescript.edible == true)
         {
             text.text = ScoreModuleScript.ScoreUp().ToString();
-            Destroy(gameObject);
+            Destroy(other);
         }
     }
 

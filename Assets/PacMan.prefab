@@ -180,6 +180,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 6336328068255318784}
   _Navmesh: {fileID: 8597103855145190643}
+  ennemy: {fileID: 7890795826059064973, guid: f47c3dd452322d9409c107cec5490ce7, type: 3}
+  isFollow: 1
   billes: []
 --- !u!54 &5749527598944485314
 Rigidbody:
@@ -209,3 +211,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ff8fac17947dc9488d2d57f35837dbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 1444926712133865929, guid: bfde3cab6b25bdf4a8372f445642c03b, type: 3}
